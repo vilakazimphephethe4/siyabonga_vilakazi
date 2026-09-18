@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Make a Plan 💕</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Floating hearts -->
+    <div class="hearts">
+      <span>♡</span>
+      <span>♡</span>
+      <span>♡</span>
+      <span>♡</span>
+      <span>♡</span>
+      <span>♡</span>
+    </div>
+    <main class="card form-card">
+      <div class="emoji">🥰</div>
+      <h1>Okay... let's make a plan</h1>
+      <p class="intro">Pick a day and time that works for you.</p>
+      <form id="planForm">
+        <!-- Date -->
+        <div class="form-group">
+          <label for="date"> 📅 Pick a day </label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <!-- Time -->
+        <div class="form-group">
+          <label for="time"> 🕐 Pick a time </label>
+
+          <input type="time" id="time" name="time" required />
+        </div>
+
+        <!-- Plan -->
+        <div class="form-group">
+          <label for="plan">What should we do? </label>
+
+          <select id="plan" name="plan" required>
+            <option value="">Choose something...</option>
+
+            <option value="Play pool 🎱">Play pool 🎱</option>
+
+            <option value="Watch football ⚽">Watch football ⚽</option>
+
+            <!--<option value="Get something to eat 🍕">
+              Get something to eat 🍕
+            </option-->
+
+            <option value="Watch a movie 🎬">Watch a movie 🎬</option>
+
+            <option value="Just chill 😊">Just chill 😊</option>
+
+            <option value="Something else">Something else ✨</option>
+          </select>
+        </div>
+
+        <!-- Other plan -->
+        <div class="form-group" id="otherPlanGroup" style="display: none">
+          <label for="otherPlan"> ✨ Tell me what you have in mind </label>
+
+          <input
+            type="text"
+            id="otherPlan"
+            name="otherPlan"
+            placeholder="Your idea..." />
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="message"> 💬 Anything you'd like to add? </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Anything you'd like me to know..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Confirm Plan 💌</button>
+      </form>
+
+      <p id="formResponse"></p>
+    </main>
+
+    <footer>Made by Siyabonga Vilakazi</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
